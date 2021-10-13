@@ -1,0 +1,476 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+/* Permite posicionar el scroll con los items del menu */
+:root{
+scroll-behavior: smooth;
+}
+
+
+
+.header{
+
+    height: 60vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%),url(../img/seve_logo.jpg) #989898;
+    background-blend-mode: multiply,multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-bottom: 60px;
+    
+}
+
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Textos del encabezado */
+.empresa{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 10px;
+   
+}
+
+.eslogan{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:larger;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.e-estrellas{
+    font-size:20px;
+    color: #C0C0C0;
+}
+
+/* Titulo del sistema */
+.titulo{
+
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color:#33365f;
+    font-weight:bold;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+
+/* Menu de navegación */
+.menu-icono{
+
+    position: fixed;
+    top:30px;
+    right: 30px;
+    background: rgba(255,255,255,255);
+    width: 35px;
+    height: 35px;
+    cursor:pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.nav-menu{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:20vw;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #33365f;
+    background-blend-mode: multiply,multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.nav-menu a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.nav-menu a:hover{
+
+    color:#4c99ba;
+
+}
+
+
+.spread{
+    transform: translate(0);
+}
+
+/* Subtitulos de toda la página */
+.subtitulo{
+
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: #ffffff;
+    font-weight:bold;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* Contenedor de Servicios de la Plataforma de Gestion de Recursos */
+.container-servicios{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width:90%;
+    max-width:1200px;
+    overflow: hidden;
+    margin:auto;
+    padding: 60px 0;
+    border-radius: 20px;
+    background: rgb(51, 54, 95,.5);
+    margin-bottom: 60px;
+}
+
+.container-servicios img{
+    width: 40%;
+}
+
+/* Texto de los servicios de la plataforma */
+.checklist-servicios{
+    width: 45%;
+}
+
+.servicio{
+    margin-bottom: 20px;
+}
+
+.servicio p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.servicio span{
+    color: #C0C0C0;
+    margin-right: 5px;
+   
+
+}
+
+.servicio h3{
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #4c99ba;
+    background-blend-mode: multiply,multiply;
+    width: 100%;
+    height: auto;
+    margin-bottom: 7px;
+    color: #ffffff;
+    border-radius: 5%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+    
+}
+
+
+
+/* Galeria con los servicios de Seve */
+
+.container-galeria{
+    width: 98%;
+    padding: 20px;
+    margin-bottom: 60px;
+    background: rgb(51, 54, 95,.5);
+    border-radius: 20px;
+  
+    
+}
+
+.container-img{
+    
+    box-shadow: 0 0 6px rgba(0,0,0,.7);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.n-img{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.img-galeria{
+    width:100%;
+}
+
+.container-img p{
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:larger;
+    font-weight:bold;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Realizar una exposición de una imagen elegida */
+.imagen-light{
+
+    position: fixed;
+    background: rgb(51, 54, 95,.5);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.container-light{
+width:35%;
+box-shadow: 0 0 6px rgba(0,0,0,.7);
+border-radius: 20px;
+text-align: center;
+
+}
+
+.exponer-fondo{
+transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width:100%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s 2.s;
+}
+
+.exponer-imagen{
+
+    transform: scale(1);
+}
+
+.info{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:larger;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.licencia{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:larger;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Icono para cerrar la imagen expuesta */
+.close{
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor:pointer;
+}
+
+
+/* Misiòn de la empresa */
+
+.container-mision{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width:90%;
+    max-width:1200px;
+    overflow: hidden;
+    margin: auto;
+    background: rgb(51, 54, 95,.5);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.mision{
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+
+
+
+.mision h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:larger;
+    color: #000;
+  
+}
+
+
+
+
+
+/* Estilos del pie de página */
+footer{
+    background: #C0C0C0;
+    padding-bottom: 0.1px;
+}
+
+.container-footer{
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
+.copyright{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:normal;
+    font-size:medium;
+    color:blue;
+}
+
+.medios{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:normal;
+    font-size:medium;
+    color:blue;
+}
+
+
+
+@media only screen and (max-width:800px){
+
+    .nav-menu{
+        width: 30vw;
+    }
+
+    .empresa{
+        font-size: 40px;
+    }
+
+    .eslogan{
+        font-size: medium;
+    }
+    
+    .titulo{
+    font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 25px;
+    }
+    
+    .container-servicios img{
+        width: 75%;
+    }
+
+    .container-galeria p{
+        margin-top: 10px;
+    }
+    .agregar-imagen{
+        width: 45%;
+    }
+    
+
+}
+
+
+@media only screen and (max-width:300px){
+
+    .empresa{
+        font-size: 30px;
+    }
+
+    .eslogan{
+        font-size:small;
+    }
+    
+    .titulo{
+    font-size: 25px;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    
+    .servicio h3{
+        width:90%;
+        font-size: medium;
+
+    }
+
+    .servicio p{
+        font-size: medium;
+    }
+
+    .nav-menu a{
+        font-size: medium;
+       
+    }
+
+    .menu-icono{
+        top:10px;
+        right: 10px;
+        height: 25px;
+        width: 25px;
+        border-radius: 5px;
+       
+    }
+
+    .img-galeria{
+        
+        width: 100%;
+    }
+
+    .container-img p{
+        font-size: medium;
+    }
+
+    .agregar-imagen{
+        width: 90%;
+    }
+
+    .close{
+        width: 25px;
+    }
+
+    .mision h3{
+        font-size: medium;
+    }
+
+}
+

@@ -1,0 +1,177 @@
+:root{
+    --colorTextos:#C0C0C0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #4c99ba;
+    background-blend-mode: multiply,multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+   
+}
+
+.container-busqueda{
+  margin-top: 25vh;
+  display: flex; 
+    
+}
+
+
+.container-tabla{
+    display: block;
+    align-content: center;
+}
+
+
+.titulo{
+
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color:#33365f;
+    font-weight:bold;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.subtitulo{
+
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    color: #ffffff;
+    font-weight:bold;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.container-botones{
+    
+    display: flex;
+    
+}
+
+
+.boton-buscar {
+
+    background: #1f53c5;
+    padding: 12px;
+    color: white;
+    margin: 16px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    }
+    
+    .boton-buscar:hover{
+    
+            background-color: #C0C0C0;
+    }
+
+.idbuscar {
+
+     
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: 'calibri';
+        font-size: 18px;
+        color:#fff;
+        width: 250px;
+        }
+
+
+.boton-modificar {
+
+background: #1f53c5;
+padding: 12px;
+color: white;
+margin: 16px 15px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor:pointer;
+}
+
+.boton-modificar:hover{
+
+        background-color: #afa516;
+}
+
+.boton-eliminar {
+
+    background: #1f53c5;
+    padding: 12px;
+    color: white;
+    margin: 16px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    }
+    
+    .boton-eliminar:hover{
+    
+            background-color: #df0a0a;
+    }
+
+.boton-generar {
+
+background: #1f53c5;
+padding: 12px;
+color: white;
+margin: 16px 15px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor:pointer;
+}
+
+.boton-generar:hover{
+    background-color: #34a543;
+}
+
+
+
+/* Diseño de tabla de datos */
+
+table {
+width: 800px;
+border-collapse: collapse;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+background-color: rgba(255,255,255,0.2);
+}
+
+th,
+td {
+padding: 15px;
+background-color: rgba(255,255,255,0.2);
+color:#fff;
+}
+
+th {
+text-align: left;
+}
+
+thead th{
+    background-color: #55608f;
+
+}
+
+tbody tr:hover{
+    
+        background-color: rgba(152, 212, 83, 0.3);
+    
+}

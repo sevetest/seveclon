@@ -1,0 +1,122 @@
+header{
+
+    background: rgb(51, 54, 95,.5);
+    /* height:80px; */
+    height: 20vh;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+
+}
+
+.nav-icono{
+
+    position: fixed;
+    top:20px;
+    right: 30px;
+    background: rgba(255,255,255,255);
+    width: 35px;
+    height: 35px;
+    cursor:pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    display: none;
+    
+}
+
+.nav-menu{
+
+    
+    display:flex;
+    justify-content:space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.container-logo{
+
+padding: 10px;
+width: 200px;
+height: 110px;
+}
+
+.logo{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav-lista{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-item{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #ffffff;
+    margin: 0 10px;
+    line-height: 20vh;
+    
+}
+
+.n-link{
+    color: #fff;
+    text-decoration: none;
+    }
+
+.n-link:hover{
+    color:#4c99ba;
+    transition: .5s;
+}
+
+/* Diseño responsivo de la barra de navegación */
+@media only screen and (max-width:750px){
+ 
+
+    .nav-icono{
+        
+        display: block;
+        position: fixed;
+        top:20px;
+        right: 30px;
+        width: 35px;
+        height: 35px;
+       /*  z-index: 10; */
+        
+    }
+
+    
+    
+    .nav-lista{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width:40vw;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #33365f;
+        background-blend-mode: multiply,multiply;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: transform .3s ease-in-out;
+        transform: translate(110%);
+        box-shadow: 0 0 6px rgba(0,0,0,.5);
+        padding-top: 20px;
+        margin-right: 0;
+        overflow-y: auto;
+        
+    }
+
+    .spread{
+        
+        transform: translate(0);
+    }
+    
+    
+
+}
